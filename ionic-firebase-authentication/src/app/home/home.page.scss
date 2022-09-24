@@ -25,3 +25,28 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content {
+  /*--background: url('../../assets/img1.jpg') no-repeat center center / cover !important;*/
+  --ion-background-color: #8b4513;
+  --ion-background-color: linear-gradient(0deg, rgba(253,29,29,1) 0%, rgba(180,117,58,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+ion-grid{
+  background-color: #fff;
+  margin: auto;
+  display: block;
+  width: 40%;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+ion-col{
+  display: flex!important;
+  align-content: center!important;
+  align-items: center!important;
+}
+
+p{
+  text-align: center;
+}
