@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'password-reset',
     loadChildren: () => import('./password-reset/password-reset.module').then( m => m.PasswordResetPageModule)
   },
+  {
+    path: 'cardapio',
+    loadChildren: () => import('./cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },
+  {
+    path: 'selecionar',
+    loadChildren: () => import('./selecionar/selecionar.module').then( m => m.SelecionarPageModule)
+  },
 ];
 
 @NgModule({

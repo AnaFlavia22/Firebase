@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>SELECIONAR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="success">
+    <h2 style="text-align: center; font-weight: bold;">Selecionar Produto</h2>
+  </ion-card>
+  <ion-list >
+    <ion-item *ngFor="let produto of produtos" >
+      <ion-label>{{produto.nomeDoProduto}}</ion-label>
+      <ion-checkbox checked="{{produto.marcado}}" [(ngModel)]="produto.marcado" color="success"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-card color="light">
+    <h2 style="text-align: center; font-weight: bold; color: #fff;">Exibir Produtos Selecionados</h2>
+  </ion-card>
+  <ion-button expand="block" (click)="exibirProdutos()">Exibir</ion-button>
+</ion-content>

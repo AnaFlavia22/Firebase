@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  public selectIndex = 0;
+  public appPages = [
+    { title: 'Produtos', url: 'cardapio', icon: 'restaurant' },
+    { title: 'Comprar', url: 'selecionar', icon: 'cart' },
+  ];
+  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }

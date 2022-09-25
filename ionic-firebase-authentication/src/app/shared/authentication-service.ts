@@ -88,7 +88,7 @@ export class AuthenticationService {
       .signInWithPopup(provider)
       .then((result) => {
         this.ngZone.run(() => {
-          this.router.navigate(['dashboard']);
+          this.router.navigate(['cardapio']);
         });
         this.SetUserData(result.user);
       })
