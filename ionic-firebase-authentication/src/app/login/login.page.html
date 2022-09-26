@@ -32,8 +32,9 @@
   <ion-row>
     <ion-col>
       <ion-button type="submit" (click)="logIn(email, password)" expand="block"
-        >Login</ion-button
-      >
+        >Login
+        <ion-icon slot="start" name="log-in"></ion-icon>
+      </ion-button>
     </ion-col>
   </ion-row>
   
@@ -60,6 +61,7 @@
         [routerLink]="['/password-reset']"
       >
         Esqueci minha senha
+        <ion-icon slot="start" name="build"></ion-icon>
       </ion-button>
     </ion-col>
   </ion-row>
