@@ -20,7 +20,7 @@ export class RegistrationPage implements OnInit {
     .then((res) => {
       // Do something here
       this.authService.SendVerificationMail()
-      //this.router.navigate(['verify-email']);
+      this.router.navigate(['verify-email']);
     }).catch((error) => {
       window.alert(error.message)
     })
